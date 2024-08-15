@@ -1,4 +1,7 @@
+import sys
 import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 import requests
 import streamlit as st
 import numpy as np
@@ -161,9 +164,10 @@ def load_secrets(secret_name = 'my-chatbot-secrets', region = 'us-east-2'):
         print(f"An error occured: {e}")
 
 def initialize_openai(api_key, base_url):
+  
     client = OpenAI(
         base_url=base_url,
-        api_key=api_key,
+        api_key=api_key
     )
     return client
 

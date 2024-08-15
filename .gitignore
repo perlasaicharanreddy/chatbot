@@ -8,3 +8,38 @@
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore logs
+debug.log
+logs/
+
+# Ignore system files
+.DS_Store
+
+# Ignore SSH keys and credentials
+chatbot.pem
+*.pem
+
+# Ignore OS generated files
+Thumbs.db
+
+# Ignore Docker/venv
+*.pid
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore VSCode settings
+.vscode/
